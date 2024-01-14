@@ -29,10 +29,35 @@ url: "https://badcomoc.dev" # the base hostname & protocol for your site, e.g. h
 #twitter_username: jekyllrb
 github_username: BadComoc
 
+style: light
+font-size: small
+
 # Build settings
-theme: minima
 plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate-v2
   - jekyll-feed
+  - jekyll-toc
+  - jemoji
+remote_theme: cyevgeniy/jekyll-true-minimal
+
+pagination:
+  enabled: true
+  per_page: 10
+  permalink: '/page/:num/'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  
+permalink: /:year/:month/:title.html
+
+sass:
+  style: compressed
+
+highlighter: rogue
+
+markdown: kramdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.
