@@ -1,20 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset='utf-8'>
-    <title>
-        {% if page.title %}
-            {{ page.title }}
-        {% else %} 
-            {{ site.name }} &mdash; {{ site.description }}
-        {% endif %}
-    </title>
+	<title>404 Bozo</title>
 
-    {% if site.highlighter %}
-        <link rel='stylesheet' href='{{ site.url }}{{ site.baseurl }}/assets/css/syntax.css' type='text/css'>
-    {% endif %}
-	
 	<!-- Meta Tags -->
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -50,18 +39,13 @@
 
 	<!-- Style Sheets -->
 	<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/assets/css/style.css" />
-
 </head>
 
 <body>
-	<div id="body-container">
-    {% include header.html %}
-	<!-- Main -->
-	<div id="page-container">
-		<div id="content-wrapper">
-			{{ content }}
-		</div>
-	</div>
-	</div>
+  <!-- Main -->
+  <div id="fourofour-container">
+    <p id="fourofour-text">404 Bozo</p>
+  </div>
 </body>
+
 </html>

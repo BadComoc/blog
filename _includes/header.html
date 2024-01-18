@@ -1,5 +1,14 @@
+<!-- Header -->
 <header>
-    <h1><a href='{{ site.url }}/'>{{ site.name }}</a></h1>
-</header>
-<a href='{{ site.url }}/'> Go Back</a> | <a href='{{ site.url }}{{ site.baseurl }}/'>Blog </a>
-<hr>
+    <div id="nav-container">
+      <nav id="nav-wrapper" class="blue">
+        <ul>
+          <li><a href="{{ site.url }}/" draggable="false">Home</a></li>
+          <li><a class="current" href="{{ site.url }}{{ site.baseurl }}/" draggable="false">Blog</a></li>
+          <li><a href="{{ site.url }}/coolstuff/" draggable="false">Cool Stuff</a></li>
+          <li><a href="{{ site.url }}/about/" draggable="false">About</a></li>
+          <li><a href="{{ site.url }}/links/" draggable="false">Links</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
